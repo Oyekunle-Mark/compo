@@ -1,0 +1,91 @@
+<!-- the form does not take a special class. every form-group is contained in a fieldset and every input has a form control class -->
+
+<form>
+    <fieldset class="form-group">
+        <label>Text Label</label>
+        <input type="text" class="form-control" placeholder="Enter Text">
+        <small class="text-muted">This is a text input</small>
+    </fieldset>
+    <fieldset class="form-group">
+        <label>Select dropdown</label>
+        <select class="form-control">
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+        </select>
+    </fieldset>
+    <fieldset class="form-group">
+        <label>Textarea</label>
+        <textarea class="form-control"></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+        <label>File input</label>
+        <input class="form-control" type="file">
+        <small class="text-muted">Supported file type are: png</small>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- inline forms are created by applying the form-inline class to the form element and replacing the fieldset tags with div tags -->
+
+<form class="form-inline">
+    <div class="form-group">
+        <label>Text Label</label>
+        <input type="text" class="form-control" placeholder="Enter Text">
+    </div>
+    <div class="form-group">
+        <label>Textarea</label>
+        <textarea class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label>File input</label>
+        <input class="form-control" type="file">
+        <small class="text-muted">Supported file type are: png</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- the labels of a form could be hidden by using the sr-only class with the label tag -->
+
+<form>
+    <fieldset class="form-group">
+        <label class="sr-only">Text Label</label>
+        <input type="text" class="form-control" placeholder="Enter Text">
+        <small class="text-muted">This is a text input</small>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="sr-only">Select dropdown</label>
+        <select class="form-control">
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+        </select>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="sr-only">Textarea</label>
+        <textarea class="form-control"></textarea>
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="sr-only">File input</label>
+        <input class="form-control" type="file">
+        <small class="text-muted">Supported file type are: png</small>
+    </fieldset>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- you can change the size of inputs by using the form-control-lg and form-control-sm class on the input -->
+
+<form>
+    <fieldset class="form-group">
+        <label class="sr-only">Text Label</label>
+        <input type="text" class="form-control form-control-lg" placeholder="Large form input">
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="sr-only">Text Label</label>
+        <input type="text" class="form-control" placeholder="Default form input">
+    </fieldset>
+    <fieldset class="form-group">
+        <label class="sr-only">Text Label</label>
+        <input type="text" class="form-control form-control-sm" placeholder="Small form input">
+    </fieldset>
+</form>
